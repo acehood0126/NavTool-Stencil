@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>{{ head.title }}</title>
-    {{{ head.meta_tags }}}
-    {{{ head.config }}}
+    {{{ head.meta_tags }}} {{{ head.config }}}
 
-    <link href="{{ head.favicon }}" rel="shortcut icon">
+    <link href="{{ head.favicon }}" rel="shortcut icon" />
     {{#block "head"}}{{/block}}
-</head>
-<body>
+  </head>
+  <body>
     {{#block "page"}}{{/block}}
-</body>
+  </body>
 </html>
